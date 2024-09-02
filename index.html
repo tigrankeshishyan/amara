@@ -14,7 +14,7 @@
       content="Amara LLC is a leading music distribution service working exclusively with Sony Music through The Orchard in Armenia. Stay tuned for our upcoming website."
     />
     <meta property="og:image" content="image_link_here.jpg" />
-    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:url" content="https://amara.am" />
     <style>
       * {
         box-sizing: border-box;
@@ -48,6 +48,7 @@
       .header .logo img {
         width: 100%;
         max-width: 300px;
+        border-radius: 4px;
         margin: 0 auto;
         animation: fadeIn 2s ease-in-out;
       }
@@ -170,6 +171,11 @@
       }
 
       @media (max-width: 768px) {
+        .header .logo img {
+          width: 100%;
+          max-width: fit-content;
+        }
+
         body {
           padding: 0;
         }
@@ -214,7 +220,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="logo">
-          <img src="amara_Logo_Full_White.svg" alt="Amara Logo" />
+          <img src="amara_Logo_Full_Horizontal_White.svg" alt="Amara Logo" />
         </div>
       </header>
       <main class="main-content">
