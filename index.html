@@ -106,6 +106,13 @@
         color: #bbbbbb;
       }
 
+      .spotify-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
       .artist {
         display: flex;
         flex-direction: column;
@@ -140,6 +147,13 @@
         color: #dcdcdc;
       }
 
+      .links-title {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #dcdcdc;
+      }
+
       @keyframes pulse {
         0%,
         100% {
@@ -171,6 +185,10 @@
       }
 
       @media (max-width: 768px) {
+        .spotify-links {
+          flex-direction: column;
+        }
+
         .header .logo img {
           width: 100%;
           max-width: fit-content;
@@ -242,8 +260,10 @@
         <hr />
         <br />
         <br />
+
+        <h3 class="links-title">Discover our artists on Spotify:</h3>
+
         <div class="spotify-links">
-          <h3>Discover our artists on Spotify:</h3>
           <div class="artist">
             <a href="https://spotify.com/artist1" target="_blank">3.33</a>
             <iframe
